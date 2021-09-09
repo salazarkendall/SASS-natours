@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222222;
+    font-family: 'Late', sans-serif;
+    font-size: 18px;
+    margin: 30px;
+}
+
+.container {
+    background-image: linear-gradient(to bottom left, #28b485, #288ab4);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    padding: 20px;
+    height: 60vh;
+}
+
+.logo-box {
+    margin: 10px;
+    padding: 10px;
+    /*position: relative;*/
+}
+
+.logo {
+    height: 30px;
+}
