@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -25,12 +25,12 @@ body {
 }
 
 .logo-box {
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 30px;
-    animation-name: logoInUp;
     animation-duration: 2s;
+    animation-name: logoInUp;
     animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
 }
 
 .logo {
@@ -38,27 +38,27 @@ body {
 }
 
 .text-box {
-    text-align: center;
-    position: absolute;
-    top: 45%;
     left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 45%;
     transform: translate(-50%, -50%);
 }
 
 .heading-primary {
     color: #fff;
-    text-transform: uppercase;
     margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
 .heading-primary-main {
+    animation-duration: 3s;
+    animation-name: moveInLeft;
+    animation-timing-function: ease-in-out;
     display: block;
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
-    animation-name: moveInLeft;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
 }
 
 .heading-primary-sub {
@@ -77,9 +77,9 @@ body {
         transform: translateX(-100px);
     }
     100% {
-        visibility: visible;
         opacity: 1;
         transform: translateX(0);
+        visibility: visible;
     }
 }
 
@@ -106,9 +106,9 @@ body {
 }
 
 .btn:any-link {
-    display: inline-block;
     border-radius: 100px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
     margin: 10px;
     padding: 15px 40px;
     text-decoration: none;
