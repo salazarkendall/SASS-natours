@@ -111,6 +111,7 @@ body {
     display: inline-block;
     margin: 10px;
     padding: 15px 40px;
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     transition: all .2s;
@@ -129,4 +130,43 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+
+.btn::after {
+    border-radius: 100px;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .4s;
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInButton 1s ease-out .75s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; /* This makes the animation starts with the 0% specified values */
+}
+
+@keyframes moveInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
