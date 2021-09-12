@@ -26,6 +26,8 @@ body {
 
 .logo-box {
     animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
     animation-name: logoInUp;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
@@ -34,7 +36,7 @@ body {
 }
 
 .logo {
-    height: 35px;
+    height: 25px;
 }
 
 .text-box {
@@ -69,40 +71,6 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17px;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-        visibility: visible;
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes logoInUp {
-    0% {
-        opacity: 0;
-        transform: rotateY(90deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotateY(0deg);
-    }
 }
 
 .btn:any-link {
@@ -165,8 +133,42 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes logoInUp {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
     }
 }
