@@ -1,17 +1,21 @@
-* {
-    box-sizing: border-box;
+*, *::after, *::before {
     margin: 0;
     padding: 0;
+    box-sizing: inherit; /* This will take the body property and then apply it to any element */
+}
+
+html {
+    font-size: 62.5%; /* This is 1 rem because this is the root size */
 }
 
 body {
     background-color: #222222;
+    box-sizing: border-box;
     color: whitesmoke;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .header {
@@ -20,7 +24,6 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
     height: 80vh;
-    padding: 30px;
     position: relative;
 }
 
@@ -30,13 +33,13 @@ body {
     animation-fill-mode: backwards;
     animation-name: logoInUp;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 30px;
+    top: 4rem;
+    left: 4rem;
     position: absolute;
 }
 
 .logo {
-    height: 25px;
+    height: 2.5rem;
 }
 
 .text-box {
@@ -49,7 +52,7 @@ body {
 
 .heading-primary {
     color: #fff;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     text-transform: uppercase;
 }
 
@@ -58,9 +61,9 @@ body {
     animation-name: moveInLeft;
     animation-timing-function: ease-in-out;
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 }
 
 .heading-primary-sub {
@@ -68,17 +71,18 @@ body {
     animation-name: moveInRight;
     animation-timing-function: ease-in-out;
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17px;
+    letter-spacing: 1.7rem;
 }
 
 .btn:any-link {
-    border-radius: 100px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.2);
     display: inline-block;
-    margin: 10px;
-    padding: 15px 40px;
+    font-size: 1.6rem;
+    margin: 1rem;
+    padding: 1.5rem 4rem;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -86,13 +90,13 @@ body {
 }
 
 .btn:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-.3rem);
 }
 
 .btn:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-.1rem);
 }
 
 .btn-white {
@@ -101,7 +105,7 @@ body {
 }
 
 .btn::after {
-    border-radius: 100px;
+    border-radius: 10rem;
     content: "";
     display: inline-block;
     height: 100%;
@@ -131,18 +135,18 @@ body {
 @keyframes moveInButton {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0);
     }
 }
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     100% {
         opacity: 1;
@@ -154,7 +158,7 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     100% {
         opacity: 1;
