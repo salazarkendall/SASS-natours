@@ -3,20 +3,25 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
 $color-gray-dark: #777;
+$color-background: #222224;
 $color-white: whitesmoke;
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; /* This will take the body property and then apply it to any element */
+  box-sizing: inherit;
+  /* This will take the body property and then apply it to any element */
 }
 
 html {
-  font-size: 62.5%; /* This is 1 rem because this is the root size */
+  font-size: 62.5%;
+  /* This is 1 rem because this is the root size */
 }
 
 body {
-  background-color: #222222;
+  background-color: $color-background;
   box-sizing: border-box;
   color: $color-white;
   font-family: 'Lato', sans-serif;
@@ -137,5 +142,6 @@ body {
 .btn--animated {
   animation: moveInButton 1s ease-out .75s;
   animation-delay: 2s;
-  animation-fill-mode: backwards; /* This makes the animation starts with the 0% specified values */
+  animation-fill-mode: backwards;
+  /* This makes the animation starts with the 0% specified values */
 }
