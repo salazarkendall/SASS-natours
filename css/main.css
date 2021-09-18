@@ -1,21 +1,19 @@
 *,
 *::after,
 *::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  /* This will take the body property and then apply it to any element */
 }
 
 html {
   font-size: 62.5%;
-  /* This is 1 rem because this is the root size */
 }
 
 body {
-  background-color: #222224;
+  background-color: #222222;
   box-sizing: border-box;
-  color: whitesmoke;
+  color: #fff;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -23,14 +21,13 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   height: 80vh;
   position: relative;
 }
-
 .header__logo-box {
   animation-duration: 2s;
   animation-delay: 1s;
@@ -41,11 +38,9 @@ body {
   left: 4rem;
   position: absolute;
 }
-
 .header__logo {
-  height: 2.5rem;
+  height: 3.5rem;
 }
-
 .header__text-box {
   left: 50%;
   position: absolute;
@@ -59,7 +54,6 @@ body {
   margin-bottom: 6rem;
   text-transform: uppercase;
 }
-
 .heading-primary--main {
   animation-duration: 3s;
   animation-name: moveInLeft;
@@ -69,7 +63,6 @@ body {
   font-weight: 400;
   letter-spacing: 3.5rem;
 }
-
 .heading-primary--sub {
   animation-duration: 3s;
   animation-name: moveInRight;
@@ -93,22 +86,18 @@ body {
   text-transform: uppercase;
   transition: all 0.2s;
 }
-
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.3rem);
 }
-
+.btn:hover::after {
+  transform: scale(1.2);
+  opacity: 0;
+}
 .btn:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.1rem);
 }
-
-.btn--white {
-  background-color: whitesmoke;
-  color: #777;
-}
-
 .btn::after {
   border-radius: 10rem;
   content: "";
@@ -121,16 +110,13 @@ body {
   width: 100%;
   z-index: -1;
 }
-
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
 .btn--white::after {
-  background-color: whitesmoke;
+  background-color: #fff;
 }
-
-.btn:hover::after {
-  transform: scale(1.2);
-  opacity: 0;
-}
-
 .btn--animated {
   animation: moveInButton 1s ease-out 0.75s;
   animation-delay: 2s;
