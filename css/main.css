@@ -1,38 +1,29 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-
-$color-gray-dark: #777;
-$color-white: whitesmoke;
-
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; /* This will take the body property and then apply it to any element */
-}
+  box-sizing: inherit;
+  /* This will take the body property and then apply it to any element */ }
 
 html {
-  font-size: 62.5%; /* This is 1 rem because this is the root size */
-}
+  font-size: 62.5%;
+  /* This is 1 rem because this is the root size */ }
 
 body {
   background-color: #222222;
   box-sizing: border-box;
-  color: $color-white;
+  color: whitesmoke;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 3rem;
-}
+  padding: 3rem; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: top;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   height: 80vh;
-  position: relative;
-}
+  position: relative; }
 
 .header__logo-box {
   animation-duration: 2s;
@@ -42,26 +33,22 @@ body {
   animation-timing-function: ease-in-out;
   top: 4rem;
   left: 4rem;
-  position: absolute;
-}
+  position: absolute; }
 
 .header__logo {
-  height: 2.5rem;
-}
+  height: 2.5rem; }
 
 .header__text-box {
   left: 50%;
   position: absolute;
   text-align: center;
   top: 45%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 
 .heading-primary {
   color: #fff;
   margin-bottom: 6rem;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .heading-primary--main {
   animation-duration: 3s;
@@ -70,8 +57,7 @@ body {
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
-}
+  letter-spacing: 3.5rem; }
 
 .heading-primary--sub {
   animation-duration: 3s;
@@ -80,12 +66,11 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.7rem;
-}
+  letter-spacing: 1.7rem; }
 
 .btn:any-link {
   border-radius: 10rem;
-  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 700;
@@ -94,23 +79,19 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .2s;
-}
+  transition: all .2s; }
 
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  transform: translateY(-.3rem);
-}
+  transform: translateY(-0.3rem); }
 
 .btn:active {
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
-  transform: translateY(-.1rem);
-}
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.1rem); }
 
 .btn--white {
-  background-color: $color-white;
-  color: $color-gray-dark;
-}
+  background-color: whitesmoke;
+  color: #777; }
 
 .btn::after {
   border-radius: 10rem;
@@ -122,20 +103,19 @@ body {
   top: 0;
   transition: all .4s;
   width: 100%;
-  z-index: -1;
-}
+  z-index: -1;}
 
 .btn--white::after {
-  background-color: $color-white;
-}
+  background-color: whitesmoke; }
 
 .btn:hover::after {
   transform: scale(1.2);
-  opacity: 0;
-}
+  opacity: 0; }
 
 .btn--animated {
   animation: moveInButton 1s ease-out .75s;
   animation-delay: 2s;
-  animation-fill-mode: backwards; /* This makes the animation starts with the 0% specified values */
-}
+  animation-fill-mode: backwards;
+  /* This makes the animation starts with the 0% specified values */ }
+
+/*# sourceMappingURL=main.css.map */
