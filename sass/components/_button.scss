@@ -60,22 +60,28 @@
 
 .btn-text {
 	&:any-link {
-		font-size: $default-font-size;
+		border-bottom: 0.1rem solid $color-primary;
+		border-radius: 0.2rem;
 		color: $color-primary;
 		display: inline-block;
-		text-decoration: none;
-		border-bottom: 0.1rem solid $color-primary;
+		font-size: $default-font-size;
 		padding: 0 1rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
 	}
 
 	&:hover {
+		background-color: $color-primary;
+		border-bottom: 0.1rem solid $color-primary;
+		box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
 		color: $color-white;
 		display: inline-block;
 		text-decoration: none;
-		background-color: $color-primary;
-		border-bottom: 0.1rem solid $color-primary;
 		transform: translate(0, -0.5rem);
-		box-shadow: 0 0.5rem 10px black;
-		transition: all 0.2s ease-in-out;
+	}
+
+	&:active {
+		box-shadow: 0 0 0.5rem rgba($color-black, 0.5);
+		transform: translate(0, 0.3rem);
 	}
 }

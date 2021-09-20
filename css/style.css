@@ -87,13 +87,15 @@ body {
     transform: skewY(2deg); }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  color: #777;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem;
-  margin-bottom: 2rem; }
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center; }
@@ -150,7 +152,7 @@ body {
   border-radius: 10rem;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 1rem;
   padding: 1.5rem 4rem;
@@ -195,22 +197,27 @@ body {
   /* This makes the animation starts with the 0% specified values */ }
 
 .btn-text:any-link {
-  font-size: 1.6rem;
+  border-bottom: 0.1rem solid #55c57a;
+  border-radius: 0.2rem;
   color: #55c57a;
   display: inline-block;
-  text-decoration: none;
-  border-bottom: 0.1rem solid #55c57a;
-  padding: 0 1rem; }
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; }
 
 .btn-text:hover {
+  background-color: #55c57a;
+  border-bottom: 0.1rem solid #55c57a;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
   color: #fff;
   display: inline-block;
   text-decoration: none;
-  background-color: #55c57a;
-  border-bottom: 0.1rem solid #55c57a;
-  transform: translate(0, -0.5rem);
-  box-shadow: 0 0.5rem 10px black;
-  transition: all 0.2s ease-in-out; }
+  transform: translate(0, -0.5rem); }
+
+.btn-text:active {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  transform: translate(0, 0.3rem); }
 
 .header {
   background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");

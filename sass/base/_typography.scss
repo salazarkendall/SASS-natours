@@ -53,15 +53,17 @@ body {
 		letter-spacing: 0.15rem;
 		transform: skewY(2deg);
 	}
-}	
+}
 
 .heading-tertiary {
-	font-size: 1.6rem;
+	color: $color-gray-light;
+	font-size: $default-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .paragraph {
-	font-size: 1.6rem;
-	margin-bottom: 2rem;
+	color: $color-white;
+	font-size: $default-font-size;
+	margin-bottom: 3rem;
 }
