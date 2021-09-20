@@ -46,7 +46,6 @@ body {
 
 body {
   background-color: #111;
-  color: black;
   font-family: 'Lato  ', sans-serif;
   font-weight: 200;
   line-height: 1.7;
@@ -110,7 +109,7 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -125,24 +124,24 @@ body {
 
 .btn::after {
   border-radius: 10rem;
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  transition: all .4s;
+  transition: all 0.4s;
   width: 100%;
   z-index: -1; }
 
 .btn--white {
   background-color: #fff;
-  color: #222; }
+  color: #777; }
   .btn--white::after {
     background-color: #fff; }
 
 .btn--animated {
-  animation: moveInButton 1s ease-out .75s;
+  animation: moveInButton 1s ease-out 0.75s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
   /* This makes the animation starts with the 0% specified values */ }

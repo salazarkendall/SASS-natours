@@ -1,60 +1,59 @@
-
 .btn {
-    &:any-link {
-      border-radius: 10rem;
-      box-shadow: 0 .3rem .5rem rgba($color-black, 0.2);
-      display: inline-block;
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin: 1rem;
-      padding: 1.5rem 4rem;
-      position: relative;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all .2s;
-    }
-  
-    &:hover {
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-      transform: translateY(-.3rem);
-  
-      &::after {
-        transform: scale(1.2);
-        opacity: 0;
-      }
-    }
-  
-    &:active {
-      box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
-      transform: translateY(-.1rem);
-    }
-  
-    &::after {
-      border-radius: 10rem;
-      content: "";
-      display: inline-block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: all .4s;
-      width: 100%;
-      z-index: -1;
-    }
-  
-    &--white {
-      background-color: $color-white;
-      color: $color-gray-dark;
-  
-      &::after {
-        background-color: $color-white;
-      }
-    }
-  
-    &--animated {
-      animation: moveInButton 1s ease-out .75s;
-      animation-delay: 2s;
-      animation-fill-mode: backwards;
-      /* This makes the animation starts with the 0% specified values */
-    }
-  }
+	&:any-link {
+		border-radius: 10rem;
+		box-shadow: 0 0.3rem 0.5rem rgba($color-black, 0.2);
+		display: inline-block;
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin: 1rem;
+		padding: 1.5rem 4rem;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all 0.2s;
+	}
+
+	&:hover {
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+		transform: translateY(-0.3rem);
+
+		&::after {
+			transform: scale(1.2);
+			opacity: 0;
+		}
+	}
+
+	&:active {
+		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+		transform: translateY(-0.1rem);
+	}
+
+	&::after {
+		border-radius: 10rem;
+		content: '';
+		display: inline-block;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transition: all 0.4s;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&--white {
+		background-color: $color-white;
+		color: $color-gray-light;
+
+		&::after {
+			background-color: $color-white;
+		}
+	}
+
+	&--animated {
+		animation: moveInButton 1s ease-out 0.75s;
+		animation-delay: 2s;
+		animation-fill-mode: backwards;
+		/* This makes the animation starts with the 0% specified values */
+	}
+}
