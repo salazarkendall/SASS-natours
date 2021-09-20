@@ -3,7 +3,7 @@
 		border-radius: 10rem;
 		box-shadow: 0 0.3rem 0.5rem rgba($color-black, 0.2);
 		display: inline-block;
-		font-size: 1.6rem;
+		font-size: $default-font-size;
 		font-weight: 700;
 		margin: 1rem;
 		padding: 1.5rem 4rem;
@@ -55,5 +55,27 @@
 		animation-delay: 2s;
 		animation-fill-mode: backwards;
 		/* This makes the animation starts with the 0% specified values */
+	}
+}
+
+.btn-text {
+	&:any-link {
+		font-size: $default-font-size;
+		color: $color-primary;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 0.1rem solid $color-primary;
+		padding: 0 1rem;
+	}
+
+	&:hover {
+		color: $color-white;
+		display: inline-block;
+		text-decoration: none;
+		background-color: $color-primary;
+		border-bottom: 0.1rem solid $color-primary;
+		transform: translate(0, -0.5rem);
+		box-shadow: 0 0.5rem 10px black;
+		transition: all 0.2s ease-in-out;
 	}
 }

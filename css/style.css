@@ -76,15 +76,24 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   color: transparent;
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.5s;
   background-clip: text;
   -webkit-background-clip: text; }
   .heading-secondary:hover {
-    transform: skew(5deg, 2deg);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+    letter-spacing: 0.15rem;
+    transform: skewY(2deg); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 2rem; }
 
 .u-center-text {
   text-align: center; }
@@ -97,6 +106,45 @@ body {
 
 .u-mb-4 {
   margin-bottom: 4rem; }
+
+.u-mb-2 {
+  margin-bottom: 2rem; }
+
+.u-mt-8 {
+  margin-top: 8rem; }
+
+.u-mt-6 {
+  margin-top: 6rem; }
+
+.u-mt-4 {
+  margin-top: 4rem; }
+
+.u-mt-2 {
+  margin-top: 2rem; }
+
+.u-ph-2 {
+  padding: 0rem 2rem; }
+
+.u-ph-4 {
+  padding: 0rem 4rem; }
+
+.u-ph-6 {
+  padding: 0rem 6rem; }
+
+.u-ph-8 {
+  padding: 0rem 8rem; }
+
+.u-pv-2 {
+  padding: 2rem 0rem; }
+
+.u-pv-4 {
+  padding: 4rem 0rem; }
+
+.u-pv-6 {
+  padding: 6rem 0rem; }
+
+.u-pv-8 {
+  padding: 8rem 0rem; }
 
 .btn:any-link {
   border-radius: 10rem;
@@ -145,6 +193,24 @@ body {
   animation-delay: 2s;
   animation-fill-mode: backwards;
   /* This makes the animation starts with the 0% specified values */ }
+
+.btn-text:any-link {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #55c57a;
+  padding: 0 1rem; }
+
+.btn-text:hover {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #55c57a;
+  border-bottom: 0.1rem solid #55c57a;
+  transform: translate(0, -0.5rem);
+  box-shadow: 0 0.5rem 10px black;
+  transition: all 0.2s ease-in-out; }
 
 .header {
   background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
@@ -199,5 +265,5 @@ body {
 
 .section-about {
   background-color: #222;
-  padding: 25rem 0;
+  padding: 20rem 0;
   margin-top: -15%; }

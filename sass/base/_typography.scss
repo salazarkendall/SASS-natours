@@ -1,6 +1,5 @@
 body {
-background-color: $color-background;
-	// color: $color-gray-dark;
+	background-color: $color-background;
 	font-family: 'Lato  ', sans-serif;
 	font-weight: 200;
 	line-height: 1.7;
@@ -41,7 +40,7 @@ background-color: $color-background;
 	);
 	color: transparent;
 	display: inline-block;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	transition: all 0.5s;
@@ -49,7 +48,20 @@ background-color: $color-background;
 	-webkit-background-clip: text;
 
 	&:hover {
-		transform: skew(5deg, 2deg);
-		text-shadow: 0.5rem 1rem 2rem rgba(black, 0.5);
+		// transform: skew(5deg, 2deg);
+		// text-shadow: 0.5rem 1rem 2rem rgba(black, 0.5);
+		letter-spacing: 0.15rem;
+		transform: skewY(2deg);
 	}
+}	
+
+.heading-tertiary {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
 }
