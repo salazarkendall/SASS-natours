@@ -1,3 +1,20 @@
+/*
+    This is the main Sass document.
+    We're following the 7-1 pattern.
+    It stands for "7 folders, 1 file".
+    This will help us to compile one unique css file.
+    The very basic Sass folder tree is the following:
+    sass/
+    |– abstracts/
+    |– base/
+    |– components/
+    |– layout/
+    |– pages/
+    |– themes/
+    |– vendors/
+    `– main.scss
+
+*/
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
