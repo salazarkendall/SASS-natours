@@ -1,11 +1,24 @@
 .section-about {
 	background-color: $color-grey-light-1;
-	padding: 17.5rem 0;
+	padding: 35rem 0;
 	// margin-top: -10%;
 	margin-top: -12rem;
 }
-.section-about-test {
-	background-color: $color-grey-dark-3;
-	padding: 5rem 0;
-	height: 50rem;
+
+.section-features {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url('../img/nat-4.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 20rem 0;
+	transform: skewY(-$skew-amount) translateY(-15rem);
+
+	// Direct children
+	& > * {
+		transform: skewY($skew-amount);
+	}
 }
