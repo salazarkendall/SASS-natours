@@ -2,7 +2,7 @@
 	position: relative;
 	&__photo {
 		width: 55%;
-		box-shadow: 0 1rem 1.5rem rgba($color-grey-dark-2, 0.25);
+		box-shadow: $default-shadow;
 		position: absolute;
 		transition: all 0.2s ease-in-out;
 		z-index: 0;

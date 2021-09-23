@@ -1,9 +1,10 @@
 .feature-box {
 	background-color: rgba($color-white, 0.8);
 	border-radius: 0.2rem;
-	box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+	box-shadow: $default-shadow;
 	color: $color-grey-dark-3;
 	font-size: 1.7rem;
+	font-weight: 400;
 	padding: 2.5rem;
 	text-align: center;
 	transition: all 0.25s ease-in-out;
