@@ -42,8 +42,8 @@
 	}
 
 	&--white {
-		background-color: $color-white;
-		color: $color-gray-light;
+		background-color: $color-grey-light-1;
+		color: $color-grey-dark-1;
 
 		&::after {
 			background-color: $color-white;
@@ -77,11 +77,11 @@
 		color: $color-white;
 		display: inline-block;
 		text-decoration: none;
-		transform: translate(0, -0.5rem);
+		transform: translate(0, -0.1rem);
 	}
 
 	&:active {
 		box-shadow: 0 0 0.5rem rgba($color-black, 0.5);
-		transform: translate(0, 0.3rem);
+		transform: translate(0, 0.1rem);
 	}
 }

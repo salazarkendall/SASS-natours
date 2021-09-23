@@ -48,22 +48,21 @@ body {
 	-webkit-background-clip: text;
 
 	&:hover {
-		// transform: skew(5deg, 2deg);
-		// text-shadow: 0.5rem 1rem 2rem rgba(black, 0.5);
 		letter-spacing: 0.15rem;
-		transform: skewY(2deg);
+		transform: skewY(2deg) scale(1.1);
 	}
 }
 
 .heading-tertiary {
-	color: $color-gray-light;
+	color: $color-grey-dark-1;
 	font-size: $default-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .paragraph {
-	color: $color-white;
+	text-align: justify;
+	color: $color-grey-dark-1;
 	font-size: $default-font-size;
 	margin-bottom: 3rem;
 }
