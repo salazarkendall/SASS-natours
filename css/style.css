@@ -45,7 +45,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  background-color: #111;
+  background-color: white;
   font-family: 'Lato  ', sans-serif;
   font-weight: 200;
   line-height: 1.7;
@@ -94,7 +94,7 @@ body {
 
 .paragraph {
   text-align: justify;
-  color: #fff;
+  color: #777;
   font-size: 1.8rem;
   margin-bottom: 3rem; }
 
@@ -186,7 +186,7 @@ body {
   z-index: -1; }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #f7f7f7;
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
@@ -224,10 +224,9 @@ body {
   position: relative; }
   .composition__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 0.2rem;
+    box-shadow: 0 1rem 1.5rem rgba(153, 153, 153, 0.25);
     position: absolute;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 0; }
     .composition__photo--p1 {
       left: 0;
@@ -239,8 +238,8 @@ body {
       left: 20%;
       top: 12rem; }
     .composition__photo:hover {
-      outline: 1rem solid #55c57a;
       outline-offset: 1rem;
+      outline: 1rem solid #55c57a;
       transform: scale(1.1) translateY(-0.5rem);
       z-index: 1; }
   .composition:hover .composition__photo:not(:hover) {
@@ -299,6 +298,6 @@ body {
     width: calc( 3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
 
 .section-about {
-  background-color: #222;
+  background-color: #f7f7f7;
   padding: 17.5rem 0;
   margin-top: -12rem; }
