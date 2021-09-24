@@ -279,19 +279,19 @@ body {
     .card__picture--3 {
       background-image: url(../img/nat-5.jpg); }
   .card__heading {
+    color: #fff;
     font-size: 3rem;
     font-weight: 300;
-    text-transform: uppercase;
-    text-align: right;
-    color: #fff;
     position: absolute;
-    top: 12rem;
     right: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+    top: 12rem;
     width: 65%; }
   .card__heading-span {
-    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    -webkit-box-decoration-break: clone; }
+    padding: 1rem 1.5rem; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
   .card__details {
@@ -299,12 +299,12 @@ body {
     padding: 3rem; }
     .card__details ul {
       list-style: none;
-      width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      width: 80%; }
       .card__details ul li {
-        text-align: center;
         font-size: 1.5rem;
-        padding: 1rem; }
+        padding: 1rem;
+        text-align: center; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #999; }
   .card:hover {
