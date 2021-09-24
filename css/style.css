@@ -94,7 +94,7 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   color: transparent;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 0.5s;
@@ -342,7 +342,7 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 0.2rem;
+  border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   color: #333;
   font-size: 1.7rem;
