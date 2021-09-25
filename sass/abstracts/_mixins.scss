@@ -26,6 +26,9 @@
 	}
 }
 
+/*
+	We should use this to avoid unexpected float behavior
+*/
 @mixin clearfix {
 	&::after {
 		content: '';
