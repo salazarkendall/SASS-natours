@@ -50,6 +50,15 @@
 		}
 	}
 
+	&--green {
+		background-color: $color-primary;
+		color: $color-white;
+
+		&::after {
+			background-color: $color-primary;
+		}
+	}
+
 	&--animated {
 		animation: moveInButton 1s ease-out 0.75s;
 		animation-delay: 2s;
@@ -64,6 +73,7 @@
 		color: $color-primary;
 		display: inline-block;
 		font-size: $default-font-size;
+		font-weight: 700;
 		padding: 0 1rem;
 		text-decoration: none;
 		transition: all 0.2s ease-in-out;

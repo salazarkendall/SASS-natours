@@ -16,6 +16,24 @@
     `– main.scss
 
 */
+/*
+	This mixing should be included in the BLOCK
+	component in order to work properly.
+
+	Tip: to use this mixing as a hover effect, don't
+	forget to use this psudo-elements:
+
+	@include afterfix			<-- To make it usefull
+		&:any-link				<-- The main component's functionality
+		&::after				<-- After's functionality
+		&:hover					<-- Main component's hover
+			&::after			<-- After's hover
+		&--modifier				<-- Main component's design and stuff
+		&--modifier::after		<-- After's design and stuff
+*/
+/*
+	We should use this to avoid unexpected float behavior
+*/
 @keyframes moveInButton {
   0% {
     opacity: 0;
@@ -216,6 +234,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
+
 .btn--animated {
   animation: moveInButton 1s ease-out 0.75s;
   animation-delay: 2s;
@@ -227,6 +251,7 @@ body {
   color: #55c57a;
   display: inline-block;
   font-size: 1.8rem;
+  font-weight: 700;
   padding: 0 1rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out; }
@@ -280,9 +305,9 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
     .card__picture--3 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5649fa), url(../img/nat-7.jpg); }
   .card__heading {
     color: #fff;
     font-size: 3rem;
@@ -299,6 +324,10 @@ body {
     padding: 1rem 1.5rem; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 73, 250, 0.85)); }
   .card__details {
     font-weight: 300;
     padding: 3rem; }
@@ -312,12 +341,26 @@ body {
         text-align: center; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #999; }
-  .card:hover {
-    transform: scale(1.1); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    color: #fff;
+    margin-bottom: 3rem; }
+  .card__price-only {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 300; }
 
 .composition {
   position: relative; }
@@ -419,7 +462,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 35rem 0;
+  padding: 20rem 0 30rem 0;
   margin-top: -12rem; }
 
 .section-features {
@@ -434,4 +477,4 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   margin-top: -27.5rem;
-  padding: 35rem 0; }
+  padding: 25rem 0 15rem 0; }
