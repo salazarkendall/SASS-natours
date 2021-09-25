@@ -1,3 +1,31 @@
+/*
+	This mixing should be included in the BLOCK
+	component in order to work properly.
+
+	Tip: to use this mixing as a hover effect, don't
+	forget to use this psudo-elements:
+
+	@include afterfix			<-- To make it usefull
+		&:any-link				<-- The main component's functionality
+		&::after				<-- After's functionality
+		&:hover					<-- Main component's hover
+			&::after			<-- After's hover
+		&--modifier				<-- Main component's design and stuff
+		&--modifier::after		<-- After's design and stuff
+*/
+@mixin afterfix {
+	&::after {
+		content: '';
+		display: inline-table;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+}
+
 @mixin clearfix {
 	&::after {
 		content: '';

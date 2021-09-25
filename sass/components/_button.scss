@@ -54,7 +54,6 @@
 		animation: moveInButton 1s ease-out 0.75s;
 		animation-delay: 2s;
 		animation-fill-mode: backwards;
-		/* This makes the animation starts with the 0% specified values */
 	}
 }
 
@@ -66,8 +65,8 @@
 		display: inline-block;
 		font-size: $default-font-size;
 		padding: 0 1rem;
-		transition: all 0.2s ease-in-out;
 		text-decoration: none;
+		transition: all 0.2s ease-in-out;
 	}
 
 	&:hover {

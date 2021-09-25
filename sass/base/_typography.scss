@@ -3,7 +3,6 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 200;
 	line-height: 1.7;
-	padding: 3rem;
 }
 
 .heading-primary {
@@ -33,6 +32,8 @@ body {
 }
 
 .heading-secondary {
+	-webkit-background-clip: text;
+	background-clip: text;
 	background-image: linear-gradient(
 		to right,
 		$color-primary-light,
@@ -44,8 +45,6 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	transition: all 0.5s;
-	background-clip: text;
-	-webkit-background-clip: text;
 
 	&:hover {
 		letter-spacing: 0.15rem;
@@ -61,9 +60,9 @@ body {
 }
 
 .paragraph {
-	text-align: justify;
 	color: $color-grey-dark-1;
 	font-size: $default-font-size;
 	font-weight: 300;
 	margin-bottom: 3rem;
+	text-align: justify;
 }
