@@ -117,32 +117,38 @@ body {
   font-weight: 300;
   margin-bottom: 3rem; }
 
-.u-center-text {
+.u-text-center {
   text-align: center; }
 
-.u-mb-8 {
-  margin-bottom: 8rem; }
+.u-text-end {
+  text-align: end; }
 
-.u-mb-6 {
-  margin-bottom: 6rem; }
-
-.u-mb-4 {
-  margin-bottom: 4rem; }
+.u-text-start {
+  text-align: start; }
 
 .u-mb-2 {
   margin-bottom: 2rem; }
 
-.u-mt-8 {
-  margin-top: 8rem; }
+.u-mb-4 {
+  margin-bottom: 4rem; }
 
-.u-mt-6 {
-  margin-top: 6rem; }
+.u-mb-6 {
+  margin-bottom: 6rem; }
+
+.u-mb-8 {
+  margin-bottom: 8rem; }
+
+.u-mt-2 {
+  margin-top: 2rem; }
 
 .u-mt-4 {
   margin-top: 4rem; }
 
-.u-mt-2 {
-  margin-top: 2rem; }
+.u-mt-6 {
+  margin-top: 6rem; }
+
+.u-mt-8 {
+  margin-top: 8rem; }
 
 .u-ph-2 {
   padding: 0rem 2rem; }
