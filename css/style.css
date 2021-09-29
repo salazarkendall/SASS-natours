@@ -417,17 +417,18 @@ body {
   font-size: 1.8rem;
   margin: 0 auto;
   padding: 6rem 6rem 6rem 9rem;
-  width: 75%;
-  transform: skewX(-12deg); }
+  transform: skewX(-12deg);
+  width: 75%; }
   .story__shape {
+    overflow: hidden;
     -webkit-clip-path: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     float: left;
-    height: 15rem;
+    height: 17.5rem;
     shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
-    width: 15rem;
+    width: 17.5rem;
     position: relative; }
   .story__image {
     height: 100%;
@@ -453,7 +454,7 @@ body {
     transform: translate(-50%, -50%); }
   .story:hover .story__image {
     transform: translateX(-4rem) scale(1);
-    filter: blur(0.3rem) brightness(85%); }
+    filter: blur(0.3rem) brightness(85%) saturate(0%); }
 
 .header {
   background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
