@@ -145,28 +145,28 @@ body {
   text-align: start; }
 
 .u-mb-2 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .u-mb-4 {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-mb-6 {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem !important; }
 
 .u-mb-8 {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-mt-2 {
-  margin-top: 2rem; }
+  margin-top: 2rem !important; }
 
 .u-mt-4 {
-  margin-top: 4rem; }
+  margin-top: 4rem !important; }
 
 .u-mt-6 {
-  margin-top: 6rem; }
+  margin-top: 6rem !important; }
 
 .u-mt-8 {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .u-ph-2 {
   padding: 0rem 2rem; }
@@ -192,18 +192,20 @@ body {
 .u-pv-8 {
   padding: 8rem 0rem; }
 
-.btn:any-link {
+.btn, .btn:any-link {
   border-radius: 10rem;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
   display: inline-block;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   margin: 1rem;
   padding: 1.5rem 4rem;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -212,7 +214,8 @@ body {
     transform: scale(1.2);
     opacity: 0; }
 
-.btn:active {
+.btn:focus, .btn:active {
+  outline: none;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(-0.1rem); }
 
@@ -468,6 +471,85 @@ body {
     height: 100%;
     object-fit: cover;
     width: 100%; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+
+.form__label {
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.25s ease; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+.form__radio-label {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  padding-left: 5rem; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 0.5rem solid #55c57a;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -0.5rem; }
+  .form__radio-button::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #55c57a;
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0;
+    transition: all 0.2s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
 .header {
   background-image: linear-gradient(to right top, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
