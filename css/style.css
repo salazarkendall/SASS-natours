@@ -476,10 +476,10 @@ body {
   margin-bottom: 2rem; }
 
 .form__input {
+  border: none;
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 3px solid transparent;
   border-radius: 0.2rem;
-  border: none;
   color: inherit;
   display: block;
   font-family: inherit;
@@ -578,11 +578,10 @@ body {
 
 .footer {
   background-color: #333;
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 300;
-  height: 50rem;
   padding: 10rem 0rem;
+  font-size: 1.7rem;
+  color: #fff;
+  font-weight: 300;
   position: relative; }
   .footer__logo-box {
     margin-bottom: 8rem;
@@ -601,12 +600,12 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:any-link {
-    background-color: #333;
-    transition: all 0.15s ease;
-    text-decoration: none;
     color: #f7f7f7;
+    background-color: #333;
+    text-decoration: none;
     text-transform: uppercase;
-    display: inline-block; }
+    display: inline-block;
+    transition: all 0.15s ease; }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);

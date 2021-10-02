@@ -4,11 +4,10 @@
 	}
 
 	&__input {
-
+		border: none;
 		background-color: rgba($color-white, 0.5);
 		border-bottom: 3px solid transparent;
 		border-radius: 0.2rem;
-		border: none;
 		color: inherit;
 		display: block;
 		font-family: inherit;
