@@ -693,8 +693,8 @@ body {
     filter: blur(0.2rem); }
 
 .navigation__item {
-  transition: filter 0.4s ease;
-  margin: 1rem; }
+  margin: 1rem;
+  transition: filter 0.4s ease; }
 
 .navigation__link:any-link {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50.1%);
