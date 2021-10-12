@@ -647,6 +647,7 @@ body {
   .navigation__checkbox:checked ~ .navigation__background {
     transform: scale(75); }
   .navigation__checkbox:checked ~ .navigation__nav {
+    visibility: visible;
     opacity: 1;
     width: 100%; }
 
