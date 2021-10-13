@@ -16,9 +16,11 @@
 		background-color: $color-white;
 		border-radius: 50%;
 		box-shadow: 0 1rem 2rem rgba(black, 0.1);
+		cursor: pointer;
 		height: 7rem;
 		position: fixed;
 		right: 6rem;
+		text-align: center;
 		top: 6rem;
 		width: 7rem;
 		z-index: 5;
@@ -90,7 +92,7 @@
 			padding: 1rem 2rem;
 			text-decoration: none;
 			text-transform: uppercase;
-			transition: all 0.4s ease;
+			transition: all 0.4s ease-in-out;
 
 			span {
 				display: inline-block;
@@ -105,5 +107,54 @@
 			color: $color-primary;
 			transform: translateX(1rem);
 		}
+	}
+
+	&__icon {
+		margin-top: 3.3rem;
+		position: relative;
+		&,
+		&::after,
+		&::before {
+			background-color: $color-grey-dark-3;
+			border-radius: 1rem;
+			display: inline-block;
+			height: 2px;
+			transition: all 0.2s;
+			width: 3rem;
+		}
+		&::after,
+		&::before {
+			content: '';
+			left: 0;
+			position: absolute;
+		}
+		&::before {
+			top: -1rem;
+		}
+		&::after {
+			top: 1rem;
+		}
+	}
+
+	&__button:hover &__icon::before {
+		top: -0.8rem;
+	}
+
+	&__button:hover &__icon::after {
+		top: 0.8rem;
+	}
+
+	&__checkbox:checked + &__button &__icon {
+		background-color: transparent;
+	}
+
+	&__checkbox:checked + &__button &__icon::after {
+		top: 0;
+		transform: rotate(-135deg);
+	}
+
+	&__checkbox:checked + &__button &__icon::before {
+		top: 0;
+		transform: rotate(135deg);
 	}
 }
