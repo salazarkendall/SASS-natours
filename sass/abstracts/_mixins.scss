@@ -37,9 +37,9 @@
 	}
 }
 
-@mixin centerfix {
+@mixin absCenter {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translat;
+	transform: translate(-50%, -50%);
 }
